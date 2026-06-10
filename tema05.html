@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tema 5 – Grundlæggende indhold</title>
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" type="image/png" href="/img/jennifavicon.png.jpg" />
+  </head>
+
+  <body>
+    <!-- BURGER MENU IKON -->
+    <div class="burger-menu" id="burger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav id="nav-menu">
+      <ul>
+        <li><a href="index.html">Forside</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="about.html">Om mig</a></li>
+      </ul>
+    </nav>
+
+    <header class="gaming-header">
+      <h1>Tema 5 – Grundlæggende indhold</h1>
+      <p>Projekt · Proces · Refleksion</p>
+    </header>
+
+    <!-- BOKS 1: Løsning -->
+    <section>
+      <h2>Løsning</h2>
+      <p>
+        I dette tema redesignede vi hjemmesiden for Nørrebros Posthus. Målet var at skabe et mere moderne, brugervenligt og visuelt sammenhængende website. Vi arbejdede både med struktur, design og funktionalitet, og jeg var med til at udvikle en ny
+        digital identitet, der passede til stedets atmosfære og målgruppe.
+      </p>
+      <p>
+        Her er linket til min aflevering:<br />
+        <a href="https://sakura-virksomhedssite.github.io/virksomhedssite/" target="_blank"> Se min Tema 05 aflevering </a>
+      </p>
+    </section>
+
+    <!-- BOKS 2: Mit resultat -->
+    <section>
+      <h2>Mit resultat</h2>
+
+      <p>Her er et screenshot af min løsning.</p>
+
+      <img src="../img/mitposthus.png" alt="Screenshot af Tema 05 opgave" class="tema5-billede" />
+    </section>
+
+    <!-- BOKS 3: Proces -->
+    <section>
+      <h2>Proces</h2>
+      <p>
+        Vi arbejdede i grupper, hvor vi brugte en fælles to‑do‑liste, planlægning og løbende koordinering for at holde styr på opgaverne. Vi brugte Figma rigtig meget til at udvikle wireframes, moodboards, UI‑elementer og det endelige redesign.
+        Undervejs byggede vi siden op i HTML og CSS, og vi brugte JavaScript til at skabe interaktive elementer og forbedre brugeroplevelsen. Vi lærte at samarbejde struktureret, dele ansvar og arbejde effektivt som et team.
+      </p>
+    </section>
+
+    <!-- BOKS 4: Refleksion -->
+    <section>
+      <h2>Refleksion</h2>
+      <p>
+        Jeg lærte, hvor vigtigt det er at kombinere design, funktionalitet og samarbejde. Temaet gav mig erfaring med at arbejde professionelt i en gruppe, planlægge et større projekt og bruge JavaScript til at skabe dynamik på en hjemmeside. Det var
+        et tema, hvor jeg virkelig kunne mærke min udvikling både teknisk og i forhold til teamwork.
+      </p>
+    </section>
+
+    <footer class="gaming-footer">
+      <p>© 2026 Jennifer Miwanpia Hansen · Multimediedesign</p>
+      <p class="footer-small">Portfolio eksamen · 1. semester</p>
+    </footer>
+
+    <!-- JAVASCRIPT TIL BURGERMENU -->
+    <script>
+      const burger = document.getElementById("burger");
+      const navMenu = document.getElementById("nav-menu").querySelector("ul");
+
+      burger.addEventListener("click", () => {
+        navMenu.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
