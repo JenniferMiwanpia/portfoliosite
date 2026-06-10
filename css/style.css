@@ -1,0 +1,186 @@
+/* ---------- FARVER ---------- */
+:root {
+  --blue-cyan: #398fdb;
+  --indigo: #4a39db;
+  --aqua: #39c3db;
+  --purple: #7f39db;
+  --royal-blue: #395cdc;
+
+  --bg-dark: #1b1c22;
+  --bg-panel: #262933;
+  --text-light: #e6e6e6;
+}
+
+/* ---------- GENERELT ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* ---------- OVERSKRIFTER ---------- */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2.4rem;
+  color: var(--blue-cyan);
+  text-shadow: 0 0 1px var(--blue-cyan);
+}
+
+h2 {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  font-size: 1.6rem;
+  color: var(--purple);
+  text-shadow: 0 0 1px var(--purple);
+}
+
+/* ---------- LINKS ---------- */
+a {
+  color: var(--aqua);
+}
+
+a:hover {
+  text-decoration: underline;
+  text-shadow: 0 0 1px var(--aqua);
+}
+
+/* ---------- BILLEDER ---------- */
+img {
+  display: block;
+  margin: 20px auto;
+  border-radius: 8px;
+  border: 2px solid var(--royal-blue);
+  box-shadow: 0 0 15px rgba(57, 92, 220, 0.4);
+}
+
+.small-img {
+  max-width: 200px;
+}
+
+.tema2-billede,
+.tema3-billede {
+  max-width: 600px;
+  width: 90%;
+  display: block;
+  margin: 30px auto;
+  border-radius: 10px;
+  border: 2px solid var(--blue-cyan);
+  box-shadow: 0 0 25px rgba(57, 143, 219, 0.4);
+}
+
+/* ---------- KNAPPER ---------- */
+.start-btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: var(--blue-cyan);
+  color: var(--bg-dark);
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  box-shadow: 0 0 15px var(--blue-cyan);
+  transition: 0.3s;
+}
+
+.start-btn:hover {
+  background-color: var(--aqua);
+  box-shadow: 0 0 25px var(--aqua);
+  transform: scale(1.05);
+}
+
+/* ---------- ABOUT SCROLL ---------- */
+.about-scroll {
+  max-height: 350px;
+  overflow-y: auto;
+  padding-right: 10px;
+  margin: 20px auto;
+  width: 90%;
+}
+
+.about-scroll::-webkit-scrollbar {
+  width: 10px;
+}
+
+.about-scroll::-webkit-scrollbar-thumb {
+  background: var(--blue-cyan);
+  border-radius: 10px;
+}
+
+.about-scroll::-webkit-scrollbar-track {
+  background: var(--bg-panel);
+}
+
+.tema4-billede {
+  width: 100%;
+  max-width: 600px;
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Tema 05 billede */
+.tema5-billede {
+  max-width: 600px;
+  width: 90%;
+  display: block;
+  margin: 30px auto;
+  border-radius: 10px;
+  border: 2px solid var(--blue-cyan);
+  box-shadow: 0 0 25px rgba(57, 143, 219, 0.4);
+}
+
+section p {
+  line-height: 1.8;
+}
+
+/* ------------------------------------------------ */
+/* ---------- NYE, RENE SELFIE-REGLER ---------- */
+/* ------------------------------------------------ */
+
+.forside-selfie,
+.about-selfie {
+  display: block;
+  margin: 30px auto;
+  width: 240px; /* mindre og ens størrelse */
+  height: 240px;
+  border-radius: 50%;
+  border: 8px solid var(--blue-cyan);
+  object-fit: cover;
+  object-position: center;
+  background-color: var(--bg-dark);
+  box-shadow:
+    0 0 25px rgba(57, 143, 219, 0.8),
+    0 0 60px rgba(57, 143, 219, 0.5),
+    0 0 90px rgba(127, 57, 219, 0.4);
+}
+
+/* Mobil-version */
+@media (max-width: 700px) {
+  .forside-selfie,
+  .about-selfie {
+    width: 160px;
+    height: 160px;
+    border-width: 6px;
+  }
+}
+
+/* ---------- PORTFOLIO BILLEDER ---------- */
+.portfolio-billede {
+  max-width: 600px;
+  width: 90%;
+  display: block;
+  margin: 30px auto;
+  border-radius: 10px;
+  border: 2px solid var(--blue-cyan);
+  box-shadow: 0 0 25px rgba(57, 143, 219, 0.4);
+}

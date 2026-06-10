@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Om mig</title>
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" type="image/png" href="/img/jennifavicon.png.jpg" />
+  </head>
+
+  <body>
+    <!-- BURGER MENU IKON -->
+    <div class="burger-menu" id="burger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <!-- NAVIGATION MED ID -->
+    <nav id="nav-menu">
+      <ul>
+        <li><a href="index.html">Forside</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="about.html">Om mig</a></li>
+      </ul>
+    </nav>
+
+    <header class="gaming-header">
+      <h1>Om mig</h1>
+
+      <!-- Selfie-billede -->
+      <img src="/img/nytsmil.png" alt="Portræt af Jennifer" class="about-selfie" />
+
+      <p>Multimediedesign · Kreativitet · Udvikling</p>
+    </header>
+
+    <!-- ⭐ SCROLL-BOKS STARTER HER -->
+    <div class="about-scroll">
+      <section>
+        <h2>Hvem er jeg?</h2>
+        <p>
+          Jeg hedder Jennifer Miwanpia Hansen, jeg er 21 år gammel, og jeg har rødder i Thailand, hvor jeg er født, før jeg kom til Danmark som lille. Jeg er social, nysgerrig og elsker at være i kreative miljøer, hvor der sker noget, og hvor jeg kan
+          udvikle mig sammen med andre. I januar flyttede jeg fra Lolland til København for at starte på Multimediedesign, og det har været en stor — men virkelig god — forandring. Jeg har altid været interesseret i IT og webudvikling, og det føles
+          som det helt rigtige valg for mig. Jeg trives i byen, i studiemiljøet og i det digitale arbejde, hvor jeg kan kombinere kreativitet, design og teknologi.
+        </p>
+      </section>
+
+      <section>
+        <h2>Uddannelse</h2>
+        <p>
+          Jeg læser Multimediedesign på 1. semester på EK. Selvom jeg kommer fra en HHX, har jeg altid haft en interesse for web, IT og det visuelle. Jeg kunne mærke, at jeg ville noget mere kreativt og digitalt. Derfor valgte jeg at skifte retning
+          og kaste mig ud i webudvikling og design, og det føles som det helt rigtige sted for mig.
+        </p>
+      </section>
+
+      <section>
+        <h2>Erhvervserfaring</h2>
+        <p>Jeg arbejder i et byggemarked, hvilket har givet mig ro, tålmodighed og gode kundeevner — men min fremtid ligger helt klart i det digitale.</p>
+      </section>
+
+      <section>
+        <h2>Hvad jeg har lært på 1. semester</h2>
+        <p>
+          På første semester har jeg arbejdet med HTML, CSS, JavaScript, UX‑metoder, designprocesser og prototyper i Figma. Jeg har lært at planlægge projekter, teste løsninger, samarbejde i grupper og bygge rigtige websites fra bunden. Det har givet
+          mig en stærk forståelse for både det tekniske og det visuelle — og det har gjort mig endnu mere sikker på, at jeg vil videre indenfor webudvikling og IT. Jeg kan mærke, at jeg har fundet noget, jeg virkelig godt kan lide.
+        </p>
+      </section>
+    </div>
+    <!-- ⭐ SCROLL-BOKS SLUT -->
+
+    <footer class="gaming-footer">
+      <p>© 2026 Jennifer Miwanpia Hansen · Multimediedesign</p>
+      <p class="footer-small">Portfolio eksamen · 1. semester</p>
+    </footer>
+
+    <!-- JAVASCRIPT TIL BURGERMENU -->
+    <script>
+      const burger = document.getElementById("burger");
+      const navMenu = document.getElementById("nav-menu").querySelector("ul");
+
+      burger.addEventListener("click", () => {
+        navMenu.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

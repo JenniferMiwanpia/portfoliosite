@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tema 6 – Portfolio</title>
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" type="image/png" href="/img/jennifavicon.png.jpg" />
+  </head>
+
+  <body>
+    <!-- BURGER MENU IKON -->
+    <div class="burger-menu" id="burger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <!-- NAVIGATION MED ID -->
+    <nav id="nav-menu">
+      <ul>
+        <li><a href="index.html">Forside</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="about.html">Om mig</a></li>
+      </ul>
+    </nav>
+
+    <header class="gaming-header">
+      <h1>Tema 6 – Portfolio</h1>
+      <p>Projekt · Proces · Refleksion</p>
+    </header>
+
+    <section>
+      <h2>Løsning</h2>
+      <p>
+        I Tema 06 udviklede jeg mit eget portfolio som en samlet eksamenscase. Opgaven gik ud på at designe og kode en personlig portfolio, der præsenterer mine projekter, min proces og min udvikling gennem semesteret. Jeg arbejdede med både det
+        visuelle udtryk og den tekniske opbygning, så sitet fremstår professionelt, brugervenligt og afspejler min stil.
+      </p>
+    </section>
+
+    <section>
+      <h2>Proces</h2>
+      <p>
+        Jeg startede i Figma, hvor jeg lavede moodboard, styletile og wireframes for at definere den visuelle retning. Derefter arbejdede jeg med brugertest for at sikre, at navigation, struktur og layout fungerede intuitivt. Selve sitet byggede jeg
+        i HTML, CSS og JavaScript, hvor jeg arbejdede med responsivt design, interaktive elementer og en klar struktur. Jeg brugte også Adobe‑programmer til grafiske elementer. Jeg har løbende igennem processen forbedret designet ud fra feedback og
+        test.
+      </p>
+    </section>
+
+    <section>
+      <h2>Refleksion</h2>
+      <p>
+        Temaet har givet mig en dybere forståelse for, hvordan designproces og webudvikling hænger sammen. Jeg har lært at arbejde mere struktureret, tage designvalg med begrundelse og bygge et fuldt website fra bunden. Det har også gjort mig mere
+        sikker i både Figma, HTML, CSS og JavaScript — og bekræftet, at webudvikling og digitalt design er den retning, jeg vil videre med.
+      </p>
+    </section>
+
+    <footer class="gaming-footer">
+      <p>© 2026 Jennifer Miwanpia Hansen · Multimediedesign</p>
+      <p class="footer-small">Portfolio eksamen · 1. semester</p>
+    </footer>
+
+    <!-- JAVASCRIPT TIL BURGERMENU -->
+    <script>
+      const burger = document.getElementById("burger");
+      const navMenu = document.getElementById("nav-menu").querySelector("ul");
+
+      burger.addEventListener("click", () => {
+        navMenu.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

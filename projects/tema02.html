@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tema 2 – Grundlæggende Web</title>
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" type="image/png" href="/img/jennifavicon.png.jpg" />
+  </head>
+
+  <body>
+    <!-- BURGER MENU IKON -->
+    <div class="burger-menu" id="burger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <!-- NAVIGATION MED ID -->
+    <nav id="nav-menu">
+      <ul>
+        <li><a href="index.html">Forside</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="about.html">Om mig</a></li>
+      </ul>
+    </nav>
+
+    <header class="gaming-header">
+      <h1>Tema 2 – Grundlæggende Web</h1>
+      <p>Kodning efter skabelon · Billedopsætning · Struktur</p>
+    </header>
+
+    <section>
+      <h2>Løsning</h2>
+      <p>I denne opgave skulle vi kode et website ud fra en fast skabelon. Fokus var på at følge designet præcist, sætte billeder korrekt op og strukturere HTML og CSS efter best practice.</p>
+
+      <p>
+        Her er linket til min aflevering:<br />
+        <a href="https://jennifermiwanpia.github.io/websiteopgave/index.html" target="_blank"> Se min Tema 02 aflevering </a>
+      </p>
+    </section>
+
+    <section>
+      <h2>Mit resultat</h2>
+      <p>Her er et screenshot af min løsning:</p>
+
+      <img src="../img/mincompscreen.png" alt="Screenshot af Tema 02 opgave" class="tema2-billede" />
+    </section>
+
+    <section>
+      <h2>Proces</h2>
+      <p>Jeg arbejdede ud fra den udleverede skabelon og byggede siden op med HTML og CSS. Jeg lærte at strukturere billeder korrekt, bruge flexbox/grid og sikre at layoutet matchede skabelonen.</p>
+    </section>
+
+    <section>
+      <h2>Refleksion</h2>
+      <p>Jeg blev bedre til at følge en designskabelon præcist og forstå, hvordan man opsætter billeder korrekt i kode. Jeg lærte også at arbejde mere systematisk med CSS og struktur.</p>
+    </section>
+
+    <footer class="gaming-footer">
+      <p>© 2026 Jennifer Miwanpia Hansen · Multimediedesign</p>
+      <p class="footer-small">Portfolio eksamen · 1. semester</p>
+    </footer>
+
+    <!-- JAVASCRIPT TIL BURGERMENU -->
+    <script>
+      const burger = document.getElementById("burger");
+      const navMenu = document.getElementById("nav-menu").querySelector("ul");
+
+      burger.addEventListener("click", () => {
+        navMenu.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
